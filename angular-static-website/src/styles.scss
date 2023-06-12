@@ -1,0 +1,31 @@
+:root {
+    --main-bg-color: #1DA1F2;
+}
+
+.navbar {
+    color: #FFFFFF;
+    background-color: var(--main-bg-color);
+}
+
+#navbarSupportedContent>ul>li.nav-item.active {
+    border-bottom: 6px solid #FFFFFF;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.card-body {
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.02), -4px -4px 40px rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+}
+
+button {
+    background-color: var(--main-bg-color) !important;
+    border: none !important;
+}
+
+.card-special {
+    color: var(--main-bg-color) !important;
+}
+
+.card-limited {
+    max-width: 44rem !important;
+}
