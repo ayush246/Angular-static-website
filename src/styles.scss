@@ -1,8 +1,10 @@
 :root {
     --main-bg-color: #1DA1F2;
+    --footer-text: #949C9E;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     height: 100%;
     width: 100%;
@@ -15,9 +17,16 @@ html, body {
     background-color: var(--main-bg-color);
 }
 
-#navbarSupportedContent>ul>li.nav-item:not(:last-child) {
-    border-bottom: 1px solid #FFFFFF;
+#navbarSupportedContent > ul > li.nav-item.active {
+    border-bottom: 5px solid #FFFFFF;
     border-radius: 3px 3px 0px 0px;
+}
+
+@media only screen and (max-width: 1366px) {
+    #navbarSupportedContent>ul>li.nav-item:not(:last-child) {
+        border-bottom: 1px solid #FFFFFF;
+        border-radius: 3px 3px 0px 0px;
+    }
 }
 
 .card-body {
@@ -39,10 +48,24 @@ button {
 }
 
 form {
-    width: 42rem;
     padding: 10px;
 }
 
 .btn-submit {
     width: 300px;
+}
+
+.footer-text {
+    color: var(--footer-text);
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    color: var(--footer-text);
+}
+
+.carousel-indicators li:first-child {
+    color: var(--main-bg-color);
 }
