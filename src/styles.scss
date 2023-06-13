@@ -2,13 +2,21 @@
     --main-bg-color: #1DA1F2;
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 .navbar {
     color: #FFFFFF;
     background-color: var(--main-bg-color);
 }
 
-#navbarSupportedContent>ul>li.nav-item.active {
-    border-bottom: 6px solid #FFFFFF;
+#navbarSupportedContent>ul>li.nav-item:not(:last-child) {
+    border-bottom: 1px solid #FFFFFF;
     border-radius: 3px 3px 0px 0px;
 }
 
@@ -28,4 +36,13 @@ button {
 
 .card-limited {
     max-width: 44rem !important;
+}
+
+form {
+    width: 42rem;
+    padding: 10px;
+}
+
+.btn-submit {
+    width: 300px;
 }
