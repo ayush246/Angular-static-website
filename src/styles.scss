@@ -1,6 +1,7 @@
 :root {
     --main-bg-color: #1DA1F2;
     --footer-text: #949C9E;
+    --background-div-color : #FAFAFA;
 }
 
 html,
@@ -30,7 +31,6 @@ body {
 }
 
 .card-body {
-    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.02), -4px -4px 40px rgba(0, 0, 0, 0.02);
     border-radius: 6px;
 }
 
@@ -68,4 +68,32 @@ form {
 
 .carousel-indicators li:first-child {
     color: var(--main-bg-color);
+}
+
+.cardLimit {
+    width: 600px;
+}
+
+.btnWatch {
+    width: 288px;
+}
+
+.cardPlan {
+    text-align: center;
+    width: 176px;
+    height: 150px;
+}
+
+.background-alter {
+    background-color: var(--background-div-color);
+}
+.card {
+    border: none !important;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.02), -4px -4px 40px rgba(0, 0, 0, 0.02);
+}
+
+.features {
+    .card {
+        max-width: 154px;
+    }
 }
